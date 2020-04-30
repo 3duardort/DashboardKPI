@@ -1,0 +1,143 @@
+//-----------------
+// PATRON DE COLORES 
+//------------------
+
+$texto:#111111;
+$principal:#12AFAF;
+$secundario:#009500;
+
+html{
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: $texto;
+}
+.encabezado{
+    background: $texto;
+    color: #fff;
+    padding: .5rem 0;
+ 
+}
+
+.encabezado .conteiner{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.encabezado .logo img{
+    width: 150px;
+    height: auto;
+}
+
+// Styles for buttons: search and menu
+.boton-buscar,
+.boton-menu{
+    border: 0;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 .5rem;
+    background: transparent;
+    color: #fff;
+}
+
+.boton-buscar:focus, 
+.boton-menu:focus{
+    outline: 0;
+ }
+.boton-buscar{
+    margin-left: auto;
+    margin-right: .8rem;
+}
+
+// Styles Block Serch
+#bloque-buscar{
+    flex: 1 1 100%;
+}
+
+.contenedor-bloque-buscar{
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+.contenedor-bloque-buscar input[type="text"]{
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+  
+}
+.contenedor-bloque-buscar input[type="submit"]{
+    flex:1 1 auto;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background: $principal;
+    color: #fff;
+}
+#menu-principal{
+    flex: 1 1 100%;
+}
+#menu-principal ul{
+    padding: 0;
+    list-style: none;
+    margin: 1rem 0 0 0;
+}
+#menu-principal ul a{
+    display: block;
+    padding: .8rem 0;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    border-top: 1px solid #8c8888;
+    text-decoration: none;
+}
+#menu-principal ul a:hover,
+#menu-principal ul li.active a{
+  color: $principal;
+} 
+
+// _login
+
+.bg-login-image {
+    background: url('https://source.unsplash.com/K4mSJ7kc0As/600x800');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .bg-register-image {
+    background: url('https://source.unsplash.com/Mv9hjnEUHR4/600x800');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .bg-password-image {
+    background: url('https://source.unsplash.com/oWTW-jNGl9I/600x800');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  form.user {
+  
+    .custom-checkbox.small {
+      label {
+        line-height: 1.5rem;
+      }
+    } 
+  
+    .form-control-user {
+      font-size: 0.8rem;
+      border-radius: 10rem;
+      padding: 1.5rem 1rem;
+    }
+  
+    .btn-user {
+      font-size: 0.7rem;
+      border-radius: 10rem;
+      padding: 0.75rem 1rem;
+    }
+  
+  }
+  
+  
